@@ -15,7 +15,7 @@ function send() {
     var messageElement = document.createElement("p");
     messageElement.innerHTML = "<strong>You:</strong> " + message;
     var responseElement = document.createElement("p");
-    responseElement.innerHTML = "<strong>Chatbot:</strong> " + response;
+    responseElement.innerHTML = "<strong>TosAI:</strong> " + response;
     chatbox.appendChild(messageElement);
     chatbox.appendChild(responseElement);
     chatbox.scrollTop = chatbox.scrollHeight;
