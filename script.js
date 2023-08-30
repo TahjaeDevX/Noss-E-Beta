@@ -10,8 +10,11 @@ function send() {
     } else if (message == "How are you?") {
         response = "I'm doing well, thank you.";
     } else if (message == "What's your name?") {
-        response = "My name is TosAI.";
+        response = "My name is TosAI. Made By SkyTos Studios";
     }
+    else if (message == "Who are you?")
+        response = "I am TosAI, an"
+    
     var messageElement = document.createElement("p");
     messageElement.innerHTML = "<strong>You:</strong> " + message;
     var responseElement = document.createElement("p");
