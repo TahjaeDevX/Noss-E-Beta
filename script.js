@@ -72,7 +72,7 @@ function send() {
     chatbox.appendChild(responseElement);
     chatbox.scrollTop = chatbox.scrollHeight;
     
-}
+};
 function typeWriter() {
   if (i < response.length) {
     responseElement.innerHTML += response.charAt(i);
