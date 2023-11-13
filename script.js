@@ -1,7 +1,7 @@
 var chatbox = document.getElementById("TosAI");
 var userinput = document.getElementById("userinput");
 
-function send() {
+function handleSubmit() {
     var message = userinput.value;
     userinput.value = "";
     var response = "I'm sorry, I don't understand.";
@@ -21,4 +21,14 @@ function send() {
     chatbox.appendChild(messageElement);
     chatbox.appendChild(responseElement);
     chatbox.scrollTop = chatbox.scrollHeight;
+    
+}
+function typeWriter() {
+  if (i < response.length) {
+    responseElement.innerHTML += response.charAt(i);
+    i++;
+    setTimeout(typeWriter, 25);
+ }
+}
+  typeWriter()
 }
