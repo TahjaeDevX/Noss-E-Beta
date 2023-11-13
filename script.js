@@ -1,7 +1,7 @@
 var chatbox = document.getElementById("TosAI");
 var userinput = document.getElementById("userinput");
 
-function handleSubmit() {
+function send() {
     var message = userinput.value;
     userinput.value = "";
     var response = "I'm sorry, I don't understand.";
